@@ -13,7 +13,7 @@ mai_v = men_v = 0  # Inicializa com o primeiro valor inserido
 soma = 0
 pares = []
 
-for i in range(3):
+for i in range(30):
     vetores[i] = int(input(f'Digite o {i + 1}º valor: '))
     if i == 0:
         mai_v = men_v = vetores[i]  # Inicializa mai_v e men_v com o primeiro valor
@@ -27,7 +27,7 @@ for k in vetores:
         mai_v = k
     soma += k
 
-media = soma / 3
+media = soma / 30
 v_v_a_m = sum(1 for j in vetores if j > media)
 
 print(f'Esse é o seu vetor: {vetores}')
